@@ -9,7 +9,7 @@ server_dict = {}
 server_dict["LINUX_CMD"] =     "parameters('linuxCommand')"
 
 #file which will hold the generated configuration
-output_file=open("/mnt/cf/injected_command.txt", "a+")
+output_file=open("/path/to/injected_command.txt", "a+")
 
 def run_linux_command():
     if "LINUX_CMD" in server_dict:
